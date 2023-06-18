@@ -1,3 +1,7 @@
+Подключение по РДП rdesktop -u Administrator -p Admin123 -d ROOT.DC 192.168.50.200
+
+
+
 hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 --increment-max 12 -1 ?l?u?d FB6CEDE76A37702EAD2615DC27B626EF ?1?1?1?1?1?1?1?1?1?1?1?1?1
 
 
