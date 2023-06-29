@@ -1,13 +1,22 @@
 Подключение по РДП rdesktop -u Administrator -p Admin123 -d ROOT.DC 192.168.50.200
 
 
+Перебор хешей по словарю
+hashcat -m 1000 hash.txt dict.txt
 
+Загляним в справку Hashcat, чтобы узнать номер режима хеша NTLM: 1000 | NTLM  
+
+
+Брут хешей
 hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 --increment-max 12 -1 ?l?u?d FB6CEDE76A37702EAD2615DC27B626EF ?1?1?1?1?1?1?1?1?1?1?1?1?1
+
 
 
 hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 --increment-max 12 6A6E1BB24F869966A450203F373C8EA6 ?a?a?a?a?a?a?a?a
 
- Загляним в справку Hashcat, чтобы узнать номер режима хеша NTLM: 1000 | NTLM  
+
+
+
  
   В Hashcat встроенными наборами символов являются:	
 ? | Набор символов
