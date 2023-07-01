@@ -3,6 +3,8 @@
 
 Перебор хешей по словарю
 hashcat -m 1000 hash.txt dict.txt
+hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
+
 
 Загляним в справку Hashcat, чтобы узнать номер режима хеша NTLM: 1000 | NTLM  
 
