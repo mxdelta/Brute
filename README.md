@@ -1,4 +1,3 @@
-Подключение по РДП rdesktop -u Administrator -p Admin123 -d ROOT.DC 192.168.50.200
 
 
 Перебор хешей по словарю
