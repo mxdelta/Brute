@@ -1,6 +1,10 @@
 
 
 Перебор хешей по словарю
+
+patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
+
+
 hashcat -m 1000 hash.txt dict.txt
 hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
 
