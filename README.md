@@ -26,6 +26,14 @@ john --format=mscash2 --wordlist=/usr/share/wordlists/rockyou.txt filehash
 
 john --format=mscash --mask='?a' --min-length=7 --max-length=10 filehash
 
+Показать крякнутые хеши
+
+john --show ФАЙЛ-ХЕШЕЙ
+
+Продолжить прерванную сессию
+
+john --restore
+
 hashcat -m 1000 hash.txt dict.txt
 
 hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
