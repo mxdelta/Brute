@@ -24,7 +24,11 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 john --format=mscash2 --wordlist=/usr/share/wordlists/rockyou.txt filehash
 
-john --format=mscash --mask='?a' --min-length=7 --max-length=10 filehash
+john --format=mscash2 --mask='?a' --min-length=7 --max-length=10 filehash
+
+Показать форматы
+
+john --list=formats
 
 Показать крякнутые хеши
 
