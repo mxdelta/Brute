@@ -47,6 +47,10 @@ john сохраняет логи в домашней директории ~/.joh
 
 может несколько хешей
 
+справка по хакат про експлойт хешей
+
+https://hashcat.net/wiki/doku.php?id=example_hashes
+
 hashcat -m 1000 hash.txt dict.txt
 
 hashcat ujas.txt rockyou.txt - автодетектинг хеша (файл может быть с хламом)
