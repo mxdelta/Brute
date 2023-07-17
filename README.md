@@ -49,6 +49,8 @@ john сохраняет логи в домашней директории ~/.joh
 
 справка по хакат про експлойт хешей
 
+$DCC2$10240#max_1#f4bb2ed0b323b3fa5efcc8ad8314377b
+
 https://hashcat.net/wiki/doku.php?id=example_hashes
 
 hashcat -m 1000 hash.txt dict.txt
