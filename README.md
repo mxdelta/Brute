@@ -71,6 +71,9 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
 
  
   В Hashcat встроенными наборами символов являются:	
+
+
+  
 ? | Набор символов
 ===+=========
  l | abcdefghijklmnopqrstuvwxyz
