@@ -93,6 +93,7 @@ gobuster dir -u 10.129.112.82 -w /usr/share/wordlists/dirbuster/directory-list-2
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
 
+gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html
 
 
 # Создание паролей
