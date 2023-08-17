@@ -91,7 +91,7 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
 
 gobuster dir -u 10.129.112.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10
 
-gobuster vhost -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
+gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
 
 
 
