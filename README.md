@@ -95,7 +95,7 @@ gobuster dir -u 10.129.112.82 -w /usr/share/wordlists/dirbuster/directory-list-2
 
 
 
-Создание паролей
+# Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
 
 https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm
