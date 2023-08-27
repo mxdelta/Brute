@@ -93,6 +93,10 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
 
 https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 
+утилиты
+
+wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины)
+
 gobuster dir -u 10.129.112.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
