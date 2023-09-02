@@ -98,12 +98,12 @@ https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 
 wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины)
 
-gobuster dir -u 10.129.112.82 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
 
-gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html
+gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-2.3-small.txt -t 10 -x php,html,bak,txt
 
+ffuf -c -u http://192.168.50.13/FUZZ -w raft-medium-words.txt -recursion -fc 404,403
 
 # Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
