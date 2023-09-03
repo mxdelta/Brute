@@ -96,7 +96,9 @@ https://github.com/mxdelta/SecLists/blob/master/Discovery/Web-Content/big.txt
 
 утилиты
 
-wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины)
+wpscan --url://192.168.50.200/wordpress/ --wp-content-dir -at -eu  (все директории и все плагины для вордпресс)
+
+gobuster dir -u http://192.168.50.13 -w /usr/share/SecLists/Discovery/Web-Content/directory-list-2.3-medium.txt -e -k -x txt,html,php,css,js,sh,py,cgi,db -t 50
 
 
 gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-5000.txt -u http://thetoppers.htb 
