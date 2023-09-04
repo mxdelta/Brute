@@ -107,6 +107,10 @@ gobuster dir -u 10.129.249.156 -w /usr/share/wordlists/dirbuster/directory-list-
 
 ffuf -c -u http://192.168.50.13/FUZZ -w raft-medium-words.txt -recursion -fc 404,403
 
+# фазинг переменных
+
+wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
+
 # Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
 
