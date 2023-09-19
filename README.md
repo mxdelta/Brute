@@ -116,3 +116,11 @@ wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/sh
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
 
 https://crackstation.net/crackstation-wordlist-password-cracking-dictionary.htm
+
+admin:password
+admin:admin
+root:root
+root:password
+admin:admin1
+admin:password1
+root:password1
