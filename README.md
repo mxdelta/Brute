@@ -131,3 +131,12 @@ https://github.com/urbanadventurer/username-anarchy
 
 ./username-anarchy --input-file fullnames.txt --select-format
 first,flast,first.last,firstl > unames.txt
+
+Пример 
+Firstname,Lastname
+Fergus,Smith
+Shaun,Coins
+Sophie,Driver
+Bowie,Taylor
+Hugo,Bear
+Steven,Kerb
