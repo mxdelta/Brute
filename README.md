@@ -125,6 +125,11 @@ admin:admin1
 admin:password1
 root:password1
 
+Список кредов для TOM CAT
+
+https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt
+
+
 # Создание мутаций имен и фамилий
 
 https://github.com/urbanadventurer/username-anarchy
