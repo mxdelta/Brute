@@ -125,9 +125,13 @@ admin:admin1
 admin:password1
 root:password1
 
-Список кредов для TOM CAT
+# Список кредов для TOM CAT (LABA JERRY)
 
 https://raw.githubusercontent.com/danielmiessler/SecLists/master/Passwords/Default-Credentials/tomcat-betterdefaultpasslist.txt
+
+https://raw.githubusercontent.com/tennc/webshell/master/jsp/jspbrowser/Browser.jsp (Броузер на JSP - для загрузки в том кота)
+
+
 
 
 # Создание мутаций имен и фамилий
