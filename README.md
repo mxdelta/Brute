@@ -1,3 +1,9 @@
+# Определение типа хеша
+
+https://www.tunnelsup.com/hash-analyzer/
+
+
+
 # Перебор паролей для сервисов SSH, smb и т.д.
 
 patator ssh_login host=10.8.0.14 user=john password=FILE0 0=/usr/share/wordlists/rockyou.txt -x ignore:mesg=’Authentication failed.’
