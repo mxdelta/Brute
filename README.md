@@ -2,7 +2,9 @@
 
 https://www.tunnelsup.com/hash-analyzer/
 
+# Определение модуля для хеша в хаш кат
 
+https://hashcat.net/wiki/doku.php?id=example_hashes
 
 # Перебор паролей для сервисов SSH, smb и т.д.
 
@@ -59,7 +61,6 @@ john сохраняет логи в домашней директории ~/.joh
 
 $DCC2$10240#max_1#f4bb2ed0b323b3fa5efcc8ad8314377b
 
-https://hashcat.net/wiki/doku.php?id=example_hashes
 
 hashcat -m 1000 hash.txt dict.txt
 
