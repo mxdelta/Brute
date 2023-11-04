@@ -117,9 +117,14 @@ gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-
 
 ffuf -c -u http://192.168.50.13/FUZZ -w raft-medium-words.txt -recursion -fc 404,403
 
+ffuf -u http://10.10.10.171/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc
+200,204,301,302,307,401 -o results.txt
+
 # фазинг переменных
 
 wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
+
+
 
 # Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
