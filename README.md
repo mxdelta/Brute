@@ -177,9 +177,13 @@ Steven,Kerb
 
 # ГЕНЕРАТОР ПАРОЛЕЙ СО СТРАНИЧКИ САЙТА
 
-cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
+	cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
 
+# ГЕНЕРАТОР ПАРОЛЕЙ ИЗ ПОЬЗОВАТЕЛЬСКОГО ВВОДА
 
+	hashcat --force custom  -r /usr/share/hashcat/rules/best64.rule --stdout >hashcat_words
+
+где custom - файл с разными данными о всем пользователи или домене
 
 # Брут пользователей с помощь crackmapexec
 
