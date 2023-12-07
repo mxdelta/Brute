@@ -175,6 +175,9 @@ Bowie,Taylor
 Hugo,Bear
 Steven,Kerb
 
+# ГЕНЕРАТОР ПАРОЛЕЙ СО СТРАНИЧКИ САЙТА
+
+cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
 
 
 
