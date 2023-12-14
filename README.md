@@ -136,6 +136,11 @@ wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/sh
 ffuf -c -r -u 'http://192.168.50.205/secret/evil.php?FUZZ=../../../../etc/passwd' -w /usr/share/SecLists/Discovery/Web-Content/common.txt -fs 0
 
 
+# Фазинг переменных в POST запросе
+
+ffuf -request req.txt -request-proto http -w /usr/share/wordlists/SecLists/Fuzzing/special-chars.txt -fs 724,727
+
+где req.txt - захваченный POST запрос из BURPA
 
 # Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
