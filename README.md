@@ -131,7 +131,7 @@ ffuf -c -u http://192.168.50.13/FUZZ -w raft-medium-words.txt -recursion -fc 404
 ffuf -u http://10.10.10.171/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc
 200,204,301,302,307,401 -o results.txt
 
-# фазинг переменных
+# фазинг переменных в GET запросе
 
 wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
 
@@ -143,6 +143,8 @@ ffuf -c -r -u 'http://192.168.50.205/secret/evil.php?FUZZ=../../../../etc/passwd
 ffuf -request req.txt -request-proto http -w /usr/share/wordlists/SecLists/Fuzzing/special-chars.txt -fs 724,727
 
 где req.txt - захваченный POST запрос из BURPA
+
+wfuzz -u http://11.11.11.11/centrion/api/index.php?action=autenticate -d ‘username=admin&password=FUZZ’ -w /wordlist -hc 403
 
 # Создание паролей
 	crunch 6 8 1234567890 -о /гооt/wordlist.lst:
@@ -186,7 +188,7 @@ Steven,Kerb
 
 	cewl -d 7 -m 8 --with-numbers -w cewl.out http://fuse.fabricorp.local/papercut/logs/html/index.htm
 
-# ГЕНЕРАТОР ПАРОЛЕЙ ИЗ ПОЬЗОВАТЕЛЬСКОГО ВВОДА
+# ГЕНЕРАТОР ПАРОЛЕЙ ИЗ ПОЛЬЗОВАТЕЛЬСКОГО ВВОДА
 
 	hashcat --force custom  -r /usr/share/hashcat/rules/best64.rule --stdout >hashcat_words
 
