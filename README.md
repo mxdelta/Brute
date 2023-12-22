@@ -137,6 +137,9 @@ wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/sh
 
 ffuf -c -r -u 'http://192.168.50.205/secret/evil.php?FUZZ=../../../../etc/passwd' -w /usr/share/SecLists/Discovery/Web-Content/common.txt -fs 0
 
+ffuf  -u 'http://10.10.11.173/reports.php?report=FUZZ' -w numbers.txt -fs 0 -mr 'Disclosure Information'
+
+( -mr - искать совпадения)
 
 # Фазинг переменных в POST запросе
 
