@@ -106,6 +106,9 @@ hashcat --force --hwmon-temp-abort=100 -m 1000 -D 1,2 -a 3 -i --increment-min 5 
  a | ?l?u?d?s
  b | 0x00 - 0xff
 
+# Brute по правилу
+
+hashcat -m 3200 hash.txt -r pw /usr/share/hashcat/rules/best64.rule
 
 # Брут директрий и доменов
 
