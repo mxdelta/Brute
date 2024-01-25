@@ -186,6 +186,10 @@ Sophie,Driver
 Bowie,Taylor
 Hugo,Bear
 Steven,Kerb
+# Генеартор паролей по правилам из файла
+
+hashcat --stdout pw -r /usr/share/hashcat/rules/best64.rule
+
 
 # ГЕНЕРАТОР ПАРОЛЕЙ СО СТРАНИЧКИ САЙТА
 
