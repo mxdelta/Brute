@@ -2,6 +2,8 @@
 
 https://www.tunnelsup.com/hash-analyzer/
 
+hashid file -m
+
 # Определение модуля для хеша в хаш кат
 
 https://hashcat.net/wiki/doku.php?id=example_hashes
