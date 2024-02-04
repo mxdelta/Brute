@@ -134,6 +134,8 @@ ffuf -c -u http://192.168.50.13/FUZZ -w raft-medium-words.txt -recursion -fc 404
 ffuf -u http://10.10.10.171/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc
 200,204,301,302,307,401 -o results.txt
 
+ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
+
 # фазинг переменных в GET запросе
 
 wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
