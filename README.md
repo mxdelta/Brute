@@ -215,7 +215,7 @@ crackmapexec smb streamio.htb -u users.txt -p passwords.txt
 crackmapexec smb 10.10.10.149 -u Hazard -p stealth1agent --rid-brute
 
 
-# Брутилка пользователей линукс sucrack
+# Брутилка пароля пользователей линукс sucrack
 
 git clone https://github.com/hemp3l/sucrack.git
 
@@ -226,3 +226,9 @@ make
 cd src
 
 	./sucrack -a -w 20 -s 10 -u max -r file
+# Список имен русских
+		https://github.com/Raven-SL/ru-pnames-list/tree/master/lists
+# Список нерусских имен
+		https://github.com/insidetrust/statistically-likely-usernames/tree/master
+
+#
