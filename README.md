@@ -231,4 +231,6 @@ cd src
 # Список нерусских имен
 		https://github.com/insidetrust/statistically-likely-usernames/tree/master
 
-#
+# Список русских имен с транслитерацией
+		https://github.com/sorokinpf/russian_names/blob/master/
+  
