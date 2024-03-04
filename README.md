@@ -201,7 +201,7 @@ hashcat --stdout pw -r /usr/share/hashcat/rules/best64.rule
 # ГЕНЕРАТОР ПАРОЛЕЙ ИЗ ПОЛЬЗОВАТЕЛЬСКОГО ВВОДА
 
 	hashcat --force custom  -r /usr/share/hashcat/rules/best64.rule --stdout >hashcat_words
-	
+	hashcat --force custom  -r /usr/share/hashcat/InsidePro-PasswordsPro.rule --stdout >hashcat_words
  	mousepad self_rule --> $! -->:
  
 где custom - файл с разными данными о всем пользователи или домене
