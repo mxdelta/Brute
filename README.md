@@ -4,6 +4,8 @@ https://www.tunnelsup.com/hash-analyzer/
 
 hashid file -m
 
+hashcat --example-hashes
+
 # Определение модуля для хеша в хаш кат
 
 https://hashcat.net/wiki/doku.php?id=example_hashes
