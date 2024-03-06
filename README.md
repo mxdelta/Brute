@@ -233,6 +233,13 @@ cd src
 # Список нерусских имен
 		https://github.com/insidetrust/statistically-likely-usernames/tree/master
 
+
+# Словари
+
+https://github.com/fuzzdb-project/fuzzdb/tree/master/wordlists-user-passwd
+
+
+
 # Список русских имен с транслитерацией
 		https://github.com/sorokinpf/russian_names/blob/master/
   
