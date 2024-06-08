@@ -139,6 +139,9 @@ ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/S
 
 	feroxbuster -u http://internal.analysis.htb -w /opt/SecList/Discovery/Web-Content/raft-small-words-lovercase.txt -x php
 
+	Жмем Enter и пишем ----> c -f 3-5,8,9  (это исключит рекрсивный поиск в этих каталогах)
+
+ 
 # фазинг переменных в GET запросе
 
 wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
