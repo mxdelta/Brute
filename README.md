@@ -135,6 +135,7 @@ gobuster vhost --append-domain -w /usr/share/amass/wordlists/subdomains-top1mil-
 
 ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-20000.txt -fs 7069
 
+
 ---- Брут с автоматической рекурсией
 
 	feroxbuster -u http://internal.analysis.htb -w /opt/SecList/Discovery/Web-Content/raft-small-words-lovercase.txt -x php -o output.txt
@@ -147,6 +148,8 @@ ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/S
 wfuzz -c -u 'http://redrocks.win/NetworkFileManagerPHP.php?FUZZ=test' -w /usr/share/wfuzz/wordlist/general/big.txt
 
 ffuf -c -r -u 'http://192.168.50.205/secret/evil.php?FUZZ=../../../../etc/passwd' -w /usr/share/SecLists/Discovery/Web-Content/common.txt -fs 0
+
+ffuf -c -u 'http://internal.analysis.htb/users/list.php?FUZZ=test' -w /usr/share/seclists/Discovery/Web-Content/raft-small-words-lowercase.txt -fw 2
 
 ffuf  -u 'http://10.10.11.173/reports.php?report=FUZZ' -w numbers.txt -fs 0 -mr 'Disclosure Information'
 
