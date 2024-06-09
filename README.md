@@ -137,7 +137,7 @@ ffuf -u http://10.10.11.187 -H "Host: FUZZ.flight.htb" -w /usr/share/wordlists/S
 
 ---- Брут с автоматической рекурсией
 
-	feroxbuster -u http://internal.analysis.htb -w /opt/SecList/Discovery/Web-Content/raft-small-words-lovercase.txt -x php
+	feroxbuster -u http://internal.analysis.htb -w /opt/SecList/Discovery/Web-Content/raft-small-words-lovercase.txt -x php -o output.txt
 
 	Жмем Enter и пишем ----> c -f 3-5,8,9  (это исключит рекрсивный поиск в этих каталогах)
 
