@@ -202,6 +202,6 @@ cd src
 https://github.com/fuzzdb-project/fuzzdb/tree/master/wordlists-user-passwd
 https://github.com/Bo0oM/fuzz.txt
 
-
+https://www.weakpass.com/wordlists/hashesorg
 
   
