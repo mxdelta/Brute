@@ -204,4 +204,4 @@ https://github.com/Bo0oM/fuzz.txt
 
 https://www.weakpass.com/wordlists/hashesorg
 
-  
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/SQL%20Injection
